@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="phone_call_log_item_height">72dp</dimen>
+    <dimen name="item_padding_standard">16dp</dimen>
+    <dimen name="item_image_standard">48dp</dimen>
+    <dimen name="item_title">16sp</dimen>
+    <dimen name="item_subtitle">12sp</dimen>
+    <dimen name="main_tab_height">72dp</dimen>
+    <dimen name="item_separator_padding_left">88dp</dimen>
+    <dimen name="item_separator_padding_right">48dp</dimen>
+    <dimen name="item_subtitle_bigger">14sp</dimen>
+    <dimen name="fab_margins_all">16dp</dimen>
+    <dimen name="item_default_height">72</dimen>
+    <dimen name="call_action_icon_padding_all">16dp</dimen>
+</resources>

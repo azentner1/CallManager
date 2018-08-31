@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Call Manager</string>
+    <string name="permissions_reject_warning">In order to use the app, please grant the required permissions.</string>
+
+    <string name="black_list_empty_message">You have not yet added any numbers to your list. Tap + and add away!</string>
+    <string name="blocked">Blocked</string>
+    <string name="suspicious">Suspicious</string>
+    <string name="trusted">Trusted</string>
+
+    <string name="empty_view_message_log">There doesn\'t seem to be anything here! Yet.</string>
+    <string name="empty_view_message_list">Nothing here. Tap + to add a number.</string>
+    <string name="call_number_info_text">This number is in your %1$s list.</string>
+    <string name="number_field_error">Phone number field is mandatory.</string>
+    <string name="call_type_field_error">List type must be chosen.</string>
+    <string name="call_number_new_phone_text">This phone number is new. It has been added to your trusted list.</string>
+    <string name="warning_potential_scam">Warning! Potential scam number detected!</string>
+    <string name="block_all_call_settings_label">Block all calls not from contacts</string>
+    <string name="unknown">Unknown</string>
+    <string name="messaging">Messaging</string>
+    <string name="settings_messaging_banned_words_label">Banned words (use \',\' to separate)</string>
+    <string name="call_permissions">Call permissions</string>
+    <string name="messaging_permissions">Messaging permissions</string>
+    <string name="contact_permissions">Contact permissions</string>
+    <string name="hold_to_edit">Hold to edit</string>
+    <string name="saved">Saved</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="general">General</string>
+    <string name="permissions">Permissions</string>
+    <string name="phone_number">Phone number</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".features.settings.view.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/item_padding_standard"
+            android:text="@string/general"
+            android:textAllCaps="true"
+            android:textSize="14sp"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlSettingsBlockContactRoot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_standard"
+            android:paddingEnd="@dimen/item_padding_standard"
+            android:paddingStart="@dimen/item_padding_standard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/block_all_call_settings_label"
+                android:textColor="@color/black" />
+
+            <Switch
+                android:id="@+id/swSettingsBlockContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/item_padding_standard"
+            android:text="@string/messaging"
+            android:textAllCaps="true"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/item_padding_standard"
+            android:text="@string/settings_messaging_banned_words_label"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/item_padding_standard"
+            android:paddingStart="@dimen/item_padding_standard">
+
+            <com.hootsuite.nachos.NachoTextView
+                android:id="@+id/ntvSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipSpacing="2dp"
+                app:chipTextColor="@color/colorPrimary"
+                app:chipTextSize="16dp"
+                app:chipHeight="30dp"
+                app:chipVerticalSpacing="3dp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/item_padding_standard"
+            android:text="@string/permissions"
+            android:textAllCaps="true"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlSettingsPermissionsCallRoot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_standard"
+            android:paddingEnd="@dimen/item_padding_standard"
+            android:paddingStart="@dimen/item_padding_standard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/call_permissions"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivSettingsPermissionCall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSettingsPermissionsSmsRoot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_standard"
+            android:paddingEnd="@dimen/item_padding_standard"
+            android:paddingStart="@dimen/item_padding_standard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/messaging_permissions"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivSettingsPermissionSms"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlSettingsPermissionsContactRoot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_standard"
+            android:paddingEnd="@dimen/item_padding_standard"
+            android:paddingStart="@dimen/item_padding_standard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/contact_permissions"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivSettingsPermissionContact"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSettingsSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margins_all"
+        android:src="@drawable/ic_save_settings"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>
